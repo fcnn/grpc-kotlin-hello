@@ -29,3 +29,8 @@ dependencies {
     compile "io.grpc:grpc-stub:$grpcVersion"
     compile project(':proto')
 }
+
+task wrapper(type: Wrapper) {
+  gradleVersion = "4.2.1"
+}
+
