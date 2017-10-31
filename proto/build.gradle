@@ -24,6 +24,7 @@ dependencies {
     compile "io.grpc:grpc-netty:$grpcVersion"
     compile "io.grpc:grpc-protobuf:$grpcVersion"
     compile "io.grpc:grpc-stub:$grpcVersion"
+    compile "javax.annotation:javax.annotation-api:+"
 }
 
 protobuf {
@@ -49,6 +50,6 @@ protobuf {
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = "4.2.1"
+  gradleVersion = "4.3-rc-4"
 }
 
