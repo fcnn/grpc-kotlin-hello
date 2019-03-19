@@ -1,6 +1,6 @@
 import io.grpc.ManagedChannelBuilder
-import io.grpc.examples.helloworld.GreeterGrpc
-import io.grpc.examples.helloworld.HelloRequest
+import helloworld.proto.GreeterGrpc
+import helloworld.proto.HelloRequest
 import io.grpc.netty.NegotiationType
 import io.grpc.netty.NettyChannelBuilder
 import java.util.concurrent.TimeUnit
