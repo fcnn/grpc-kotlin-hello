@@ -13,6 +13,12 @@ class GreeterImpl : GreeterGrpc.GreeterImplBase() {
 }
 
 fun main(args: Array<String>) {
+    var builder = helloworld.proto.User.newBuilder()
+    builder.name = "张三"
+    builder.uid = 100
+    val user = builder.build()
+    println("$user")
+
     val server = ServerBuilder.forPort(8080).addService(GreeterImpl()).build()
     server.start()
     println("Server started")
