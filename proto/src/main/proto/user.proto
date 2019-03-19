@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "helloworld.proto";
+option java_outer_classname = "UserProto";
+option objc_class_prefix = "USER";
+
+package user;
+
+// The request message containing the user's name.
+message User {
+  optional uint64  uid = 1; // 用户标识
+  optional string name = 2;
+}
+
