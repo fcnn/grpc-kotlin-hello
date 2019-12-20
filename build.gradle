@@ -1,5 +1,5 @@
 
 wrapper{
-    gradleVersion = '6.1-milestone-3'
+    gradleVersion = '6.1-rc-1'
     distributionType = Wrapper.DistributionType.ALL
 }
