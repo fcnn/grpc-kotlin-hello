@@ -47,8 +47,8 @@ protobuf {
 
     	generatedFilesBaseDir = "${property("projectDir")}/src"
     generateProtoTasks {
-        all().forEach {
-	    it.plugins {
+        all().forEach { task ->
+	    task.plugins {
 		    id("grpc") {
 			    outputSubDir = "java"
 		    }
