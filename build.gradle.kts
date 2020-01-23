@@ -1,5 +1,5 @@
 
-wrapper{
-    gradleVersion = '6.1'
+tasks.wrapper {
+    gradleVersion = "6.1"
     distributionType = Wrapper.DistributionType.ALL
 }
