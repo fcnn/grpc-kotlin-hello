@@ -1,7 +1,7 @@
 buildscript {
     extra.apply {
         set("grpcVersion","+")
-        set("kotlinVersion", "+")
+        set("kotlinVersion", "1.3.61")
     }
 
     repositories {
@@ -15,8 +15,8 @@ buildscript {
 
 plugins{
 	id("java")
-	//id("kotlin")
 	id("application")
+	kotlin("jvm") version("${property("kotlinVersion")}")
 }
 
 application {

@@ -34,25 +34,16 @@ dependencies {
 }
 
 protobuf {
-
-    protoc {
-        artifact = "com.google.protobuf:protoc:${property("protocVersion")}"
-    }
+    protoc { artifact = "com.google.protobuf:protoc:${property("protocVersion")}" }
 
     plugins {
-        id("grpc") {
-            artifact = "io.grpc:protoc-gen-grpc-java:${property("grpcVersion")}"
-        }
+        id("grpc") { artifact = "io.grpc:protoc-gen-grpc-java:${property("grpcVersion")}" }
     }
 
-    	generatedFilesBaseDir = "${property("projectDir")}/src"
+    generatedFilesBaseDir = "${property("projectDir")}/src"
     generateProtoTasks {
         all().forEach { task ->
-	    task.plugins {
-		    id("grpc") {
-			    outputSubDir = "java"
-		    }
-	    }
+	    task.plugins { id("grpc") { outputSubDir = "java" } }
         }
     }
 }
