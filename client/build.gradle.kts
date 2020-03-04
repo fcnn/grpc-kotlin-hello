@@ -1,7 +1,7 @@
 buildscript {
     extra.apply {
         set("grpcVersion","+")
-        set("kotlinVersion", "1.3.61")
+        set("kotlinVersion", "1.3.70")
     }
 
     repositories {
