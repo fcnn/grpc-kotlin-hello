@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import com.google.protobuf.gradle.*
 import org.gradle.kotlin.dsl.provider.gradleKotlinDslOf
 
@@ -5,8 +6,9 @@ buildscript {
     extra.apply {
         set("grpcVersion","+")
         set("protocVersion","+")
-        //set("protobufPluginVersion", "0.8.11")
-        set("protobufPluginVersion", "+")
+        set("protobufPluginVersion", "0.8.11")
+        //set("protobufPluginVersion", "+")
+        set("kotlinVersion", "1.3.70")
     }
 
     repositories {
@@ -22,6 +24,7 @@ java.sourceCompatibility = JavaVersion.VERSION_13
 
 plugins{
 	id("java")
+	kotlin("jvm") version("${property("kotlinVersion")}")
 	id("com.google.protobuf") version "${property("protobufPluginVersion")}"
 }
 
