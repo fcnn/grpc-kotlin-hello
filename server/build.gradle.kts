@@ -21,6 +21,8 @@ plugins{
 	kotlin("jvm") version("${property("kotlinVersion")}")
 }
 
+java.sourceCompatibility = JavaVersion.VERSION_13
+
 application {
     mainClassName = "HelloworldserverKt"
 }
@@ -37,3 +39,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:${property("kotlinVersion")}")
 }
 
+tasks.withType<KotlinCompile> {
+	kotlinOptions {
+		freeCompilerArgs = listOf("-Xjsr305=strict")
+		jvmTarget = "13"
+	}
+}

@@ -5,7 +5,8 @@ buildscript {
     extra.apply {
         set("grpcVersion","+")
         set("protocVersion","+")
-        set("protobufPluginVersion", "0.8.11")
+        //set("protobufPluginVersion", "0.8.11")
+        set("protobufPluginVersion", "+")
     }
 
     repositories {
@@ -16,6 +17,8 @@ buildscript {
         classpath("com.google.protobuf:protobuf-gradle-plugin:${property("protobufPluginVersion")}")
     }
 }
+
+java.sourceCompatibility = JavaVersion.VERSION_13
 
 plugins{
 	id("java")
@@ -46,4 +49,11 @@ protobuf {
 	    task.plugins { id("grpc") { outputSubDir = "java" } }
         }
     }
+}
+
+tasks.withType<KotlinCompile> {
+	kotlinOptions {
+		freeCompilerArgs = listOf("-Xjsr305=strict")
+		jvmTarget = "13"
+	}
 }

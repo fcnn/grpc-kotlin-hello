@@ -23,6 +23,8 @@ application {
     mainClassName = "HelloworldclientKt"
 }
 
+java.sourceCompatibility = JavaVersion.VERSION_13
+
 repositories {
     mavenCentral()
 }
@@ -33,5 +35,12 @@ dependencies {
     implementation("io.grpc:grpc-protobuf:${property("grpcVersion")}")
     implementation("io.grpc:grpc-stub:${property("grpcVersion")}")
     implementation(project(":proto"))
+}
+
+tasks.withType<KotlinCompile> {
+	kotlinOptions {
+		freeCompilerArgs = listOf("-Xjsr305=strict")
+		jvmTarget = "13"
+	}
 }
 
