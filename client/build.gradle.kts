@@ -25,7 +25,7 @@ application {
     mainClassName = "HelloworldclientKt"
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_13
+java.sourceCompatibility = JavaVersion.VERSION_14
 
 repositories {
     mavenCentral()

@@ -20,7 +20,7 @@ buildscript {
     }
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_13
+java.sourceCompatibility = JavaVersion.VERSION_14
 
 plugins{
 	id("java")

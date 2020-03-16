@@ -21,7 +21,7 @@ plugins{
 	kotlin("jvm") version("${property("kotlinVersion")}")
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_13
+java.sourceCompatibility = JavaVersion.VERSION_14
 
 application {
     mainClassName = "HelloworldserverKt"
