@@ -2,9 +2,8 @@ import com.google.protobuf.gradle.*
 
 buildscript {
     extra.apply {
-        set("grpcVersion","+")
-        set("protocVersion","+")
-        set("protobufPluginVersion", "0.8.11")
+        set("protocVersion", "+")
+        set("protobufPluginVersion", "0.8.12")
     }
 
     repositories {
@@ -28,10 +27,10 @@ repositories {
 }
 
 dependencies {
+    implementation("javax.annotation:javax.annotation-api:+")
     implementation("io.grpc:grpc-netty:${property("grpcVersion")}")
     implementation("io.grpc:grpc-protobuf:${property("grpcVersion")}")
     implementation("io.grpc:grpc-stub:${property("grpcVersion")}")
-    implementation("javax.annotation:javax.annotation-api:+")
 }
 
 protobuf {
