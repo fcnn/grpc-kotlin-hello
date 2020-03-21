@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
     extra.apply {
-        set("grpcVersion","+")
-        set("kotlinVersion", "1.3.70")
+        //set("grpcVersion","+")
+        //set("kotlinVersion", "1.3.70")
     }
 
     repositories {
@@ -18,7 +18,7 @@ buildscript {
 plugins{
 	id("java")
 	id("application")
-	kotlin("jvm") version("${property("kotlinVersion")}")
+	kotlin("jvm")
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_14
