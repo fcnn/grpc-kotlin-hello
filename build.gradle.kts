@@ -1,8 +1,10 @@
 
+val gradle_version = "6.3"
+
 buildscript {
     extra.apply {
         set("grpcVersion","+")
-        set("kotlinVersion", "1.3.70")
+        set("kotlinVersion", "1.3.71")
     }
 
     repositories {
@@ -15,6 +17,6 @@ plugins{
 }
 
 tasks.wrapper {
-    gradleVersion = "6.3-rc-4"
+    gradleVersion = gradle_version
     distributionType = Wrapper.DistributionType.ALL
 }
