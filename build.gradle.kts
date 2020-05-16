@@ -1,5 +1,5 @@
 
-val gradle_version = "6.4"
+val gradle_version = "6.4.1"
 
 buildscript {
     extra.apply {
