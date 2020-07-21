@@ -1,4 +1,0 @@
-rootProject.name = 'grpc-kotlin-hello'
-include 'proto'
-include 'server'
-include 'client'

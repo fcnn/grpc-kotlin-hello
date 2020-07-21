@@ -7,7 +7,10 @@ buildscript {
     }
 
     repositories {
-        mavenCentral()
+	    jcenter()
+	    mavenCentral()
+	    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+	    maven ("https://kotlin.bintray.com/kotlinx")
     }
 
     dependencies {
@@ -27,9 +30,12 @@ application {
 
 java.sourceCompatibility = JavaVersion.VERSION_14
 
-repositories {
-    mavenCentral()
-}
+    repositories {
+	    jcenter()
+	    mavenCentral()
+	    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+	    maven ("https://kotlin.bintray.com/kotlinx")
+    }
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib:${property("kotlinVersion")}")
