@@ -1,10 +1,10 @@
 
-val gradle_version = "6.7-rc-1"
+val gradle_version = "6.7"
 
 buildscript {
     extra.apply {
         set("grpcVersion", "+")
-        set("kotlinVersion", "1.4.10")
+        set("kotlinVersion", "1.4.20-M1")
     }
 
     repositories {
