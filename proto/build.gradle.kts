@@ -3,7 +3,7 @@ import com.google.protobuf.gradle.*
 buildscript {
     extra.apply {
         set("protocVersion", "+")
-        set("protobufPluginVersion", "0.8.12")
+        set("protobufPluginVersion", "0.8.13")
     }
 
     repositories {
