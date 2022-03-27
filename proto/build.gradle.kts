@@ -3,7 +3,7 @@ import com.google.protobuf.gradle.*
 buildscript {
     extra.apply {
         set("protocVersion", "+")
-        set("protobufPluginVersion", "0.8.13")
+        set("protobufPluginVersion", "0.8.18")
     }
 
     repositories {
@@ -15,7 +15,7 @@ buildscript {
     }
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_14
+java.sourceCompatibility = JavaVersion.VERSION_17
 
 plugins{
 	id("java")

@@ -28,7 +28,7 @@ application {
     mainClassName = "HelloworldclientKt"
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_14
+java.sourceCompatibility = JavaVersion.VERSION_17
 
     repositories {
 	    jcenter()
@@ -48,7 +48,7 @@ dependencies {
 tasks.withType<KotlinCompile> {
 	kotlinOptions {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "15"
+		jvmTarget = "17"
 	}
 }
 
