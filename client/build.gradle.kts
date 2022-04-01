@@ -9,8 +9,8 @@ buildscript {
     repositories {
 	    jcenter()
 	    mavenCentral()
-	    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
-	    maven ("https://kotlin.bintray.com/kotlinx")
+	    //maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+	    //maven ("https://kotlin.bintray.com/kotlinx")
     }
 
     dependencies {
@@ -33,8 +33,8 @@ java.sourceCompatibility = JavaVersion.VERSION_17
     repositories {
 	    jcenter()
 	    mavenCentral()
-	    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
-	    maven ("https://kotlin.bintray.com/kotlinx")
+	    //maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+	    //maven ("https://kotlin.bintray.com/kotlinx")
     }
 
 dependencies {

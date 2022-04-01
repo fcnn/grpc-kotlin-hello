@@ -9,8 +9,8 @@ buildscript {
     repositories {
 	    jcenter()
 	    mavenCentral()
-	    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
-	    maven ("https://kotlin.bintray.com/kotlinx")
+	    //maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+	    //maven ("https://kotlin.bintray.com/kotlinx")
     }
 
     dependencies {
@@ -30,11 +30,11 @@ application {
     mainClassName = "HelloworldserverKt"
 }
 
-    repositories {
-	    jcenter()
-	    mavenCentral()
-	    maven ("https://dl.bintray.com/kotlin/kotlin-eap")
-	    maven ("https://kotlin.bintray.com/kotlinx")
+repositories {
+	jcenter()
+	mavenCentral()
+	//maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+	//maven ("https://kotlin.bintray.com/kotlinx")
     }
 
 dependencies {
