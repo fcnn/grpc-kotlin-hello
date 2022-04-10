@@ -27,7 +27,13 @@ plugins{
 java.sourceCompatibility = JavaVersion.VERSION_18
 
 application {
-    mainClassName = "HelloworldserverKt"
+    mainClass.set("HelloworldserverKt")
+}
+
+tasks.jar {
+	manifest {
+		attributes(mapOf("Main-Class" to "HelloworldserverKt"))
+	}
 }
 
 repositories {

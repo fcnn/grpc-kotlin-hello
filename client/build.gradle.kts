@@ -25,7 +25,7 @@ plugins{
 }
 
 application {
-    mainClassName = "HelloworldclientKt"
+    mainClass.set("HelloworldclientKt")
 }
 
 java.sourceCompatibility = JavaVersion.VERSION_18
