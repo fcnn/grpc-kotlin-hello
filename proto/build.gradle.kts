@@ -15,7 +15,7 @@ buildscript {
     }
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_18
 
 plugins{
 	id("java")
@@ -31,6 +31,10 @@ dependencies {
     implementation("io.grpc:grpc-netty:${property("grpcVersion")}")
     implementation("io.grpc:grpc-protobuf:${property("grpcVersion")}")
     implementation("io.grpc:grpc-stub:${property("grpcVersion")}")
+}
+
+tasks.processResources  {
+  mustRunAfter("generateProto")
 }
 
 protobuf {
